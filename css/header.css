@@ -1,0 +1,12 @@
+.navegation_icon_menu{
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/img/Menu.svg);
+    display: inline-block;
+}
+
+.navegation{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
