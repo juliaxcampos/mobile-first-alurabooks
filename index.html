@@ -5,30 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alurabooks</title>
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" hres="css/style.css">
 </head>
 
 <body>
     <header class="navegation">
-        <div class="container">
-            <span class="navegation_icon_menu"></span>
-            <img src="assets/img/Logo.svg" alt="Logo da Alurabooks">
+        <div class="navegation_container">
+            <input type="checkbox" id="menu" class="navegation_container_button">
+            <label for="menu">
+                <span class="navegation_icon_menu"></span>
+            </label>
+            <ul class="navegation_container_menu">
+                <li class="navegation_container_menu_title">Categorias</li>
+                <li class="navegation_container_menu_item">
+                    <a href="#" class="navegation_container_menu_item_link">Programação</a>
+                </li>
+                <li class="navegation_container_menu_item">
+                    <a href="#" class="navegation_container_menu_item_link">Front-end</a>
+                </li>
+                <li class="navegation_container_menu_item">
+                    <a href="#" class="navegation_container_menu_item_link">Infraestrutura</a>
+                </li>
+                <li class="navegation_container_menu_item">
+                    <a href="#" class="navegation_container_menu_item_link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="assets/img/Logo.svg" class="navegation_container_image" alt="Logo da Alurabooks">
         </div>
-        <div class="container">
+        <div class="navegation_container">
             <a href="#">
-                <img src="assets/img/Favoritos.svg" alt="Meus favoritos">
+                <img src="assets/img/Favoritos.svg" class="navegation_container_image" alt="Meus favoritos">
             </a>
             <a href="#">
-                <img src="assets/img/Sacola.svg" alt="Carrinho de compras">
+                <img src="assets/img/Sacola.svg" class="navegation_container_image" alt="Carrinho de compras">
             </a>
             <a href="#">
-                <img src="assets/img/Usuario.svg" alt="Acesso ao usuário">
+                <img src="assets/img/Usuario.svg" class="navegation_container_image" alt="Acesso ao usuário">
             </a>
         </div>
     </header>
-
+    <main>
+        <section class="banner">
+            <h2 class="banner_title">Já sabe por onde começar?</h2>
+            <p class="banner_text">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner_search" placeholder="Qual será sua próxima leitura?">
+        </section>
+        <section class="carrossel">
+            <h2 class="carrossel_title">Novos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/img/ApacheKafka.svg" alt="Livro Apache Kafka"></div>
+                    <div class="swiper-slide"><img src="/assets/img/Arquitetura.svg" alt="Livro Arquitetura"></div>
+                    <div class="swiper-slide"><img src="assets/img/Portugol.svg" alt="Livro Portugol"></div>
+                    <div class="swiper-slide"><img src="/assets/img/Javascript.svg" alt="Livro Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/img/ReactNative.svg" alt="Livro ReactNative"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card_description">
+                    <div class="description">
+                        <h3 class="description_title">Talvez você também se interesse por...</h3>
+                        <h2 class="description_title_book">Angular 11 e Firebase</h2>
+                        <p class="description_text">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="assets/img/Angular.svg" class="description_image" alt="Livro Angular 11 e Firebase">
+                </div>
+                <div class="card_buttons">
+                    <ul class="buttons">
+                        <li class="buttons_item"><img src="assets/img/Favoritos.svg" alt="Adicionar aos favoritos"></li>
+                        <li class="buttons_item"><img src="assets/img/Sacola.svg" alt="Adicionar ao carrinho"></li>
+                    </ul>
+                    <a href="#" class="buttons_ancor">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>

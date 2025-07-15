@@ -1,0 +1,35 @@
+.banner {
+    background: var(--gradient-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+
+.banner_title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.banner_text{
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.banner_search{
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    color: var(--white);
+    padding: 1em;
+    width: 100%;
+}
+
+.banner_search::placeholder{
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    background: url("../assets/img/search.svg") no-repeat;
+    background-position: 1em;
+}
