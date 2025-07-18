@@ -1,0 +1,30 @@
+.topics{
+    background: var(--gradient-blue);
+    text-align: center;
+    color: var(--white);
+    padding: 1em 0;
+}
+
+.topics_title{
+    font-weight: 300;
+    padding-bottom: 1em;
+}
+
+.topics_visited_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topics_visited_item{
+    margin: 2em 0.5em;
+}
+
+.topics_link{
+    color: var(--white);
+    padding: 1em;
+    background-color: var(--orange);
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 800;
+}

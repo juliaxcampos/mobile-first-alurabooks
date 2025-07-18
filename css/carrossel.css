@@ -42,7 +42,7 @@
     font-weight: 700;
 }
 
-.description_title_book{
+.description_title_book, .description_title_autora{
     color: var(--blue);
     font-size: 1.2rem;
     font-weight: 700;

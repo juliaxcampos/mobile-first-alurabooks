@@ -1,6 +1,9 @@
 @import url(header.css);
 @import url(banner.css);
 @import url(carrossel.css);
+@import url(topics.css);
+@import url(contact.css);
+@import url(footer.css);
 
 :root{
     --background-main-color: #EBECEE;
@@ -8,12 +11,12 @@
     --orange: #EB9B00;
     --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --blue: #002F52;
-    --main-font: "Inter";
+    --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
     background-color: var(--background-main-color);
-    font-family: var(--main-font), sans-serif;
+    font-family: var(--main-font);
     font-size: 1rem;
     font-weight: 400;
 }
