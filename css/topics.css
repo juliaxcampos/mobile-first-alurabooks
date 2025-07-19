@@ -34,7 +34,12 @@
         font-size: 1.5rem;
     }
     .topics_visited_list {
-        width: 70%;
-        margin: auto;
+        padding: 3em 20vw;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .topics{
+        padding: 3em 10vw;
     }
 }

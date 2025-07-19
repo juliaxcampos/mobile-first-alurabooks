@@ -37,3 +37,14 @@ hr{
         margin-left: 0.6rem;
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .footer_list{
+        border-left: 1px solid var(--gray);
+        padding-left: 1em;
+    }
+    
+    .footer_area{
+        padding: 3em 0;
+    }
+}
