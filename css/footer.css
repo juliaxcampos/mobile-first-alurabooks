@@ -6,3 +6,34 @@ hr{
     background-color: var(--white);
     padding: 1em;
 }
+
+.footer_list{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer_area{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer_list{
+        display: block;
+    }
+    .footer_title{
+        font-size: 1.5rem;;
+    }
+    .footer_list_title{
+        color: var(--light-gray);
+        font-size: 0.8;
+        text-transform: uppercase;
+    }
+    .footer_list_item{
+       display: flex;
+       margin: 1em 0;
+    }
+    .footer_list_link{
+        color: var(--gray);
+        text-decoration: none;
+        margin-left: 0.6rem;
+    }
+}

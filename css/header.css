@@ -58,3 +58,51 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.container_title, .cointainer_options{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .container_title, .container_title_bold{
+        font-family:  var(--secondary-font);
+        font-size: 1.9rem;
+    }
+
+    .container_title{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container_title_bold{
+        font-weight: 700;
+    }
+
+    .cointainer_options{
+        display: flex;
+    }
+
+    .container_options_item{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .container_options_link{
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .navegation_icon_menu, .container_image_favorites{
+        display: none;
+    }
+
+    .options_menu_button:checked ~ .navegation_container_menu{
+        display: block;
+        width: auto;
+    }
+    
+    .options_menu_button{
+        display: none;
+    }
+}

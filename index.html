@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alurabooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -33,10 +40,42 @@
                 </li>
             </ul>
             <img src="assets/img/Logo.svg" class="navegation_container_image" alt="Logo da Alurabooks">
+            <h1 class="container_title"><b class="container_title_bold">Alura</b>books</h1>
         </div>
+        <nav>
+            <ul class="cointainer_options">
+                <input type="checkbox" id="options_menu" class="options_menu_button">
+                <label for="options_menu">
+                    <li class="container_options_item">
+                        Categorias
+                    </li>
+                </label>
+                <ul class="navegation_container_menu">
+                    <li class="navegation_container_menu_item">
+                        <a href="#" class="navegation_container_menu_item_link">Programação</a>
+                    </li>
+                    <li class="navegation_container_menu_item">
+                        <a href="#" class="navegation_container_menu_item_link">Front-end</a>
+                    </li>
+                    <li class="navegation_container_menu_item">
+                        <a href="#" class="navegation_container_menu_item_link">Infraestrutura</a>
+                    </li>
+                    <li class="navegation_container_menu_item">
+                        <a href="#" class="navegation_container_menu_item_link">Design & UX</a>
+                    </li>
+                </ul>
+                <li class="container_options_item">
+                    <a href="#" class="container_options_link"></a>Favoritos</a>
+                </li>
+                <li class="container_options_item">
+                    <a href="#" class="container_options_link"></a>Minha estante</a>
+                </li>
+            </ul>
+        </nav>
         <div class="navegation_container">
             <a href="#">
-                <img src="assets/img/Favoritos.svg" class="navegation_container_image" alt="Meus favoritos">
+                <img src="assets/img/Favoritos.svg" class="navegation_container_image container_image_favorites"
+                    alt="Meus favoritos">
             </a>
             <a href="#">
                 <img src="assets/img/Sacola.svg" class="navegation_container_image" alt="Carrinho de compras">
@@ -157,14 +196,89 @@
             </ul>
         </section>
         <section class="contact">
-            <h2 class="contact_title">Fique por dentro das novidades!</h2>
-            <p class="contact_text">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="contact_description">
+                <h2 class="contact_title">Fique por dentro das novidades!</h2>
+                <p class="contact_text">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="email" class="contact_email" placeholder="Cadastre seu e-mail">
         </section>
     </main>
     <hr />
     <footer class="footer_area">
         <h2 class="footer_title">Grupo Alura</h2>
+        <ul class="footer_list">
+            <li class="footer_list_title">Educação</li>
+            <li class="footer_list_item">
+                <img src="assets/img/CasaDoCodigo.svg" alt="Logo da casa do código">
+                <a href="#" class="footer_list_link">Casa do Código</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/Caelum.svg" alt="Logo da Caelum">
+                <a href="#" class="footer_list_link">Caelum</a>
+            </li>
+        </ul>
+        <ul class="footer_list">
+            <li class="footer_list_title">Educação online</li>
+            <li class="footer_list_item">
+                <img src="assets/img/Alura.svg" alt="Logo da alura">
+                <a href="#" class="footer_list_link">Alura</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/AluraEmpresas.svg" alt="Logo do Alura para Empresas">
+                <a href="#" class="footer_list_link">Alura para empresas</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/AluraLATAM.svg" alt="Logo do Alura Latam">
+                <a href="#" class="footer_list_link">Alura Latam</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/AluraStart.svg" alt="Logo do Alura Start">
+                <a href="#" class="footer_list_link">Alura Start</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/MusicDot.svg" alt="Logo do MusicDot">
+                <a href="#" class="footer_list_link">MusicDot</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/AluraLingua.svg" alt="Logo do Línguas">
+                <a href="#" class="footer_list_link">Alura Línguas</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/PM3.svg" alt="Logo do PM3">
+                <a href="#" class="footer_list_link">PM3</a>
+            </li>
+        </ul>
+        <ul class="footer_list">
+            <li class="footer_list_title">Comunidade</li>
+            <li class="footer_list_item">
+                <img src="assets/img/HipstersTech.svg" alt="Logo da Hipsters ponto Tech">
+                <a href="#" class="footer_list_link">Hipsters Ponto Tech</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/ScubaDev.svg" alt="Logo do ScubaDev">
+                <a href="#" class="footer_list_link">ScubaDev</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/LayersTech.svg" alt="Logo do Layers ponto Tech">
+                <a href="#" class="footer_list_link">Alura Latam</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/LikeABoss.svg" alt="Logo do Like a boss">
+                <a href="#" class="footer_list_link">Like a Boss</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/CarreiraSemFronteira.svg" alt="Logo do Carreira Sem Fronteira">
+                <a href="#" class="footer_list_link">Carreira Sem Fronteira</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/HipstersJobs.svg" alt="Logo do Hipsters ponto Jobs">
+                <a href="#" class="footer_list_link">Hipsters Ponto Jobs</a>
+            </li>
+            <li class="footer_list_item">
+                <img src="assets/img/GUJ.svg" alt="Logo do GUJ">
+                <a href="#" class="footer_list_link">GUJ</a>
+            </li>
+        </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>

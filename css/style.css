@@ -11,7 +11,11 @@
     --orange: #EB9B00;
     --gradient-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --blue: #002F52;
-    --main-font: Verdana, Geneva, Tahoma, sans-serif;
+    --black: #000000;
+    --gray: #474646;
+    --light-gray: #858585;
+    --main-font: "Inter", sans-serif;
+    --title-font: "Josefin Sans", sans-serif;
 }
 
 body{

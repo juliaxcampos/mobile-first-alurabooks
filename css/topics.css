@@ -25,6 +25,16 @@
     padding: 1em;
     background-color: var(--orange);
     text-decoration: none;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 800;
+}
+
+@media screen and (min-width: 1024px){
+    .topics_title, .topics_link{
+        font-size: 1.5rem;
+    }
+    .topics_visited_list {
+        width: 70%;
+        margin: auto;
+    }
 }
