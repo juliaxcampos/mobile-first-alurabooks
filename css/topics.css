@@ -17,7 +17,7 @@
 }
 
 .topics_visited_item{
-    margin: 2em 0.5em;
+    margin: 1.5em 0.5em;
 }
 
 .topics_link{
@@ -35,6 +35,9 @@
     }
     .topics_visited_list {
         padding: 3em 20vw;
+    }
+    .topics_visited_item{
+        margin: 2.1em 0.5em;
     }
 }
 
